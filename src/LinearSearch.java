@@ -13,5 +13,18 @@ public class LinearSearch<E> {
         System.out.println(res);
         int res2 = LinearSearch.search(data, 666);
         System.out.println(res2);
+
+        Student[] students = {
+            new Student("Alice"),
+            new Student("Bob"),
+            new Student("Charles"),
+        };
+        Student bob = new Student("Bob");
+        int res3 = LinearSearch.search(students, bob);
+        System.out.println(res3);
+
+        Integer[] dataTest = ArrayGenerator.generateOrderedArray(100000);
+        int resTest = LinearSearch.search(dataTest, 100000);
+        System.out.println(resTest);
     }
 }
